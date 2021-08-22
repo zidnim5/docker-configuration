@@ -1,0 +1,16 @@
+FROM golang:alpine AS build-env
+LABEL MAINTAINER "zidnim5 <zidni.mujib5@gmail.com>"
+ENV GOPATH /go
+WORKDIR /go/src
+COPY . /go/src/name_folder
+RUN cd /go/src/name_folder && go mod init service_name && go get && go mod tidy && go build .
+
+FROM alpine
+RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk*
+WORKDIR /app
+COPY --from=build-env /go/src/name_folder/service_name /app
+COPY .env /app
+
+EXPOSE 8080
+
+ENTRYPOINT [ "./service_name" ]
