@@ -25,5 +25,5 @@ Open terminal & run command below :
 # Official Documentation
 See the website for documentation on deploying different versions of the container:
 
-     - Latest release: https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
-     - Nightly snapshot build: https://www.pgadmin.org/docs/pgadmin4/development/container_deployment.html
+- Latest release: https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
+- Nightly snapshot build: https://www.pgadmin.org/docs/pgadmin4/development/container_deployment.html
