@@ -1,6 +1,6 @@
 <img src="icon.png" align="right" />
 
-# PGADMIN WEB [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+# PGADMIN WEB
 
 Open terminal & run command below :
 
@@ -18,7 +18,10 @@ Open terminal & run command below :
      -l "traefik.frontend.rule=PathPrefix:/pgadmin4" \
      -d dpage/pgadmin4
 ```
+```
+     Open http://localhost:5050 on your browser. 
+```
 
-> Open http://localhost:5050 on your broser. 
+# Official Documentation
 
 Official documentation https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
