@@ -20,6 +20,11 @@ docker run --name postgrescli \
 - -v : This parameter is related to the Docker Volume feature. Please do not change the second path because data is in this path by default.
 - -d : I will run detached mode(background mode). 
 
+Sometimes you need to do this :
+```
+firewall-cmd --permanent --zone=trusted --add-port=5432/tcp
+```
+
 # PGADMIN WEB
 
 Open terminal & run command below :
