@@ -47,6 +47,9 @@ Open terminal & run command below :
      Open http://localhost:5050 on your browser. 
 ```
 
+# CONNECT TO PGADMIN
+     <img src="connect_to_pgadmin.png">
+
 # Documentation
 
 - https://docs.docker.com/samples/postgresql_service/
