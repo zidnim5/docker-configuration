@@ -48,9 +48,9 @@ Open terminal & run command below :
 ```
 
 # Documentation
-See the website for documentation on deploying different versions of the container:
 
 - https://docs.docker.com/samples/postgresql_service/
 - https://hackernoon.com/how-to-install-postgresql-with-docker-quickly-ki7g363m
+- https://github.com/moby/moby/issues/1143
 - Latest release: https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
 - Nightly snapshot build: https://www.pgadmin.org/docs/pgadmin4/development/container_deployment.html
