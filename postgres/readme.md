@@ -48,7 +48,7 @@ Open terminal & run command below :
 ```
 
 # CONNECT TO PGADMIN
-     <img src="connect_to_pgadmin.png">
+<img src="connect_to_pgadmin.png">
 
 # Documentation
 
