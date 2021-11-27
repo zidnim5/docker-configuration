@@ -7,4 +7,5 @@
 ## Includes
 
 - Golang
+- Postgres
 - RabbitMq
