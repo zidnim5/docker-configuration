@@ -57,3 +57,5 @@ Open terminal & run command below :
 - https://github.com/moby/moby/issues/1143
 - Latest release: https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
 - Nightly snapshot build: https://www.pgadmin.org/docs/pgadmin4/development/container_deployment.html
+- Import db: https://zidni-mujib5.medium.com/import-data-dump-ke-postgresql-didalam-docker-42c334171883
+
