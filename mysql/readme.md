@@ -45,7 +45,8 @@ Open terminal & run command below :
 
 ```
 docker run --name phpmyadmin \
---restart unless-stopped \
+--restart unless-stopped \ 
+-e UPLOAD_LIMIT=300M   
 -d --link [name_of_mysql_container]:db \
 -p 8081:80 phpmyadmin/phpmyadmin
 ```
