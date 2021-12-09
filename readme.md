@@ -8,4 +8,5 @@
 
 - Golang
 - Postgres
+- MySql
 - RabbitMq
