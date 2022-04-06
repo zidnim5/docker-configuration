@@ -1,6 +1,8 @@
 <img src="icon.png" align="right" />
 
 # POSTGRES SQL
+
+## LINUX
 Open terminal & run command below :
 
 ```
@@ -24,6 +26,25 @@ Sometimes you need to do this :
 ```
 firewall-cmd --permanent --zone=trusted --add-port=5432/tcp
 ```
+
+## MacOS
+Crete new directory:
+```text
+mkdir /Users/[your_username]/Develop
+mkdir /Users/[your_username]/Develop/postgres_data
+mkdir /Users/[your_username]/Develop/postgres_data/13.2
+```
+Create network:
+```text
+docker network create dev-network
+```
+
+Create and run docker:
+```text
+docker run --restart always --name postgres13.2 --net dev-network -v /Users/[your_username]/Develop/postgres_data/13.2:/var/lib/postgresql/data -p 5432:5432 -d -e POSTGRES_PASSWORD=[your_password] postgres:13.2
+```
+**Note
+- you can change `dev-network` with your own
 
 # PGADMIN WEB
 
