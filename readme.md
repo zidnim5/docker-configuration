@@ -10,3 +10,4 @@
 - MySql
 - Postgres
 - RabbitMq
+- Redis
