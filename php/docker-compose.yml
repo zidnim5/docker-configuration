@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  php_service:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: php_service
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: train
+      SERVICE_TAGS: train
+    volumes:
+      - type: bind
+        source: ./development
+        target: /var/www
+    networks:
+      - app_train
+
+  web_server:
+    container_name: nginx_train
+    build:
+      context: ./
+      dockerfile: nginx.dockerfile
+    ports:
+      - 8070:8070
+    volumes:
+      - type: bind
+        source: ./development
+        target: /var/www
+    depends_on:
+      - php_service
+    networks:
+      - app_train
+
+networks:
+  app_train:
+    external: true
